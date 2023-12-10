@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .layout {
+    text-transform: uppercase;
+    margin: 50px auto;
+    max-width: 800px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .layout header {
+    background-color: #923158;
+    padding: 20px 40px;
+  }
+
+  .layout nav,
+  .layout footer {
+    background-color: #6e1237;
+    padding: 10px 40px;
+    margin: 10px 0;
+  }
+
+  .layout aside,
+  .layout main {
+    background-color: #d65b80;
+    padding: 20px 40px;
+  }
+
+  .layout section {
+    background-color: #db92af;
+    padding: 5px 40px 60px;
+    margin: 10px 0 ;
+  }
+
+  .layout .flex {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .layout main{
+    width: 600px;
+  }
+  .layout .flex div aside{
+    margin-bottom: 10px;
+  }
+  .layout .vertical{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+</style>
+
+<body>
+  <div class="layout">
+    <header>header</header>
+    <nav>menu</nav>
+    <div>
+      <div class="flex">
+        <div>
+          <aside>acide1</aside>
+          <aside>aside2</aside>
+        </div>
+        <main>
+          main content
+          <section>section1</section>
+          <section>sectoin2</section>
+        </main>
+        <aside class="vertical">aside3</aside>
+      </div>
+    </div>
+    <footer>footer</footer>
+</body>
+
+</html>
