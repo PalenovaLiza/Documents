@@ -7,144 +7,16 @@
   <title>Document</title>
 </head>
 <style>
-  div{
-    height: 600px;
-    width: 500px;
-    margin:auto;
-  }
-  h1{
-    text-align: center;
-  }
-  .cssSlider {
-	display: block;
-	position: relative;
-	overflow: hidden;
-  text-align: center;
-  
-}
-.cssSlider .slides {
-	overflow: hidden;
-	overflow: hidden;
-	height: 320px;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-  border:1px grey  solid;
-  width: 400px;
-}
-.cssSlider .slides > li {
-	
-	height: 70vmin;
+  .CatGallery{
+		border: 1px solid rgba(128, 128, 128, 0.123);
+	}
 
-	z-index: 1;
-	overflow: hidden;
-  
-}
-.cssSlider .slides > li > img {
-	height: auto;
-  
-}
-/*
-.cssSlider .slides > li:first-child:not(:target) {
-	z-index: 1;
-	-webkit-transform: translateY(0%);
-	        transform: translateY(0%);
-}
-*/
-.cssSlider .thumbnails {
-	display: block;
-	position: relative;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-  width: 402px;
-  height: 200px;
- 
-}
-.cssSlider .thumbnails > li {
-	float: left;
-	width: 20%;
-}
-.cssSlider .thumbnails > li > a {
-	display: block;
-  border:1px grey  solid;
-}
-.cssSlider .thumbnails > li > a > img {
-
-	height: auto;
-}
-
-.cssSlider .slides li:target {
-	z-index: 3;
-	-webkit-animation: slide 1s 1;
-}
-.cssSlider .slides li:not(:target) {
-	-webkit-animation: hidden 1s 1;
-}
-@-webkit-keyframes slide {
-	0% {
-		-webkit-transform: translateX(-100%);
-		        transform: translateX(-100%);
-	}
-	100% {
-		-webkit-transform: translateX(0%);
-		        transform: translateX(0%);
-	}
-}
-@keyframes slide {
-	0% {
-		-webkit-transform: translateX(-100%);
-		        transform: translateX(-100%);
-	}
-	100% {
-		-webkit-transform: translateX(0%);
-		        transform: translateX(0%);
-	}
-}
-@-webkit-keyframes hidden {
-	0% {
-		z-index: 2;
-		-webkit-transform: translateX(0%);
-		        transform: translateX(0%);
-	}
-	100% {
-		z-index: 2;
-		-webkit-transform: translateX(100%);
-		        transform: translateX(100%);
-	}
-}
-@keyframes hidden {
-	0% {
-		z-index: 2;
-		-webkit-transform: translateX(0%);
-		        transform: translateX(0%);
-	}
-	100% {
-		z-index: 2;
-		-webkit-transform: translateX(100%);
-		        transform: translateX(100%);
-	}
-}
 </style>
 <body>
   <h1>Cats Gallery</h1>
-  <div class="cssSlider">
-
-    <ul class="slides">
-      <li id="slide1"> <img src="img.html/cat_clean_256.png" alt=""></li>
-      <li id="slide2"> <img src="img.html/cat_cage_256.png" alt=""></li>
-      <li id="slide3"> <img src="img.html/cat_eyes_256.png" alt=""></li>
-      <li id="slide4"> <img src="img.html/cat_purr_256.png" alt=""></li>
-      <li id="slide5"> <img src="img.html/cat_tied_256.png" alt=""></li>
-    </ul>
-
-    <ul class="thumbnails">
-      <li><a href="#slide1"><img src="img.html/cat_clean_64.png" alt=""></a></li>
-      <li><a href="#slide2"><img src="img.html/cat_cage_64.png" alt=""></a></li>
-      <li><a href="#slide3"><img src="img.html/cat_eyes_64.png" alt=""></a></li>
-      <li><a href="#slide4"><img src="img.html/cat_purr_64.png" alt=""></a></li>
-      <li><a href="#slide5"><img src="img.html/cat_tied_64.png" alt=""></a></li>
-    </ul>
+  <div class="CatGallery">
+<iframe src="" frameborder="0"></iframe>
+    
   </div>
 </body>
 
