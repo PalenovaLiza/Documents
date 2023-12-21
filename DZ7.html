@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block div,
+  h1 {
+    padding: 10px;
+  }
+
+  .block {
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.561);
+    transition: 1s;
+  }
+
+  .block:hover {
+    transform: scale(1.2, 1.2);
+    transition: 1s;
+  }
+
+  .flex {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 0px;
+    border: none;
+
+  }
+  .hr1{
+   border: 2px solid #c73756;
+  }
+  .hr2{
+   border: 2px solid #d7913b;
+  }
+  .hr3{
+   border: 2px solid #2b6689;
+  }
+  .hr4{
+   border: 2px solid #63bb34;
+  }
+  .buy3{
+    border: 1px solid #2b6689;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: #2b6689;
+    text-transform: uppercase;
+    color: white;
+  }
+
+</style>
+
+<body>
+  <div class="flex">
+    <div class="block">
+      <h1>enterprise</h1>
+      <hr class="hr1">
+      <div>
+        <p>$69</p>
+        <p>per mounth</p>
+        <p>10GB disk space</p>
+        <p>100GB monthly bandwidth</p>
+        <p>20 email accounts</p>
+        <p>Unlimited sabdoment</p>
+        <button>buy</button>
+      </div>
+    </div>
+    <div class="block">
+      <h1>professional</h1>
+      <hr class="hr2">
+      <div>
+        <p>$29</p>
+        <p> per mounth</p>
+        <p>10GB disk space</p>
+        <p>100GB monthly bandwidth</p>
+        <p>20 email accounts</p>
+        <p>Unlimited sabdoment</p>
+        <button>buy</button>
+      </div>
+    </div>
+    <div class="block">
+      <h1>standart</h1>
+      <hr class="hr3">
+      <div>
+        <p>$19</p>
+        <p>per mounth</p>
+        <p>10GB disk space</p>
+        <p>100GB monthly bandwidth</p>
+        <p>20 email accounts</p>
+        <p> Unlimited sabdoment</p>
+        <button class="buy3">buy</button>
+      </div>
+    </div>
+    <div class="block">
+      <h1>basic</h1>
+      <hr class="hr4">
+      <div>
+        <p>$9</p>
+        <p>per mounth</p>
+        <p>10GB disk space</p>
+        <p>100GB monthly bandwidth</p>
+        <p>20 email accounts</p>
+        <p>Unlimited sabdoment</p>
+        <button> buy</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
