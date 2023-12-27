@@ -6,6 +6,10 @@
   <title>Document</title>
 </head>
 <style>
+  body{
+    height: 100%;
+    margin: 0;
+  }
   .flex{
     display: flex;
     flex-direction: column;
@@ -14,6 +18,7 @@
   .flex1{
     justify-content: center;
    align-items: center;
+   
   }
   .flex2{
     display: flex;
@@ -23,14 +28,28 @@
     align-items: center;
   }
   img{
-    width: 200px;
-    height: 200px;
+   height: 200px;
+   
+  }
+  img:hover{
+filter: brightness(40%)
+  
   }
   .hello{
-    width: 200px;
-    height: 200px;
+height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #73a2b2;
+   
     
-  }
+}
+.hello:hover{
+  filter: brightness(40%)
+}
+
+
 </style>
 <body>
   <div class="flex2">
