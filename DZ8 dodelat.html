@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <style>
-  body{
+  body {
     height: 100%;
     margin: 0;
   }
-  .flex{
+
+  .flex {
     display: flex;
     flex-direction: column;
-    
+
   }
-  .flex1{
+
+  .flex1 {
     justify-content: center;
-   align-items: center;
-   
+    align-items: center;
+
   }
-  .flex2{
+
+  .flex2 {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  img{
-   height: 200px;
-   
+
+  img {
+    height: 200px;
   }
-  img:hover{
-filter: brightness(40%)
-  
+
+  img:hover {
+    filter: brightness(40%)
   }
-  .hello{
-height: 200px;
+
+  .hello {
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #73a2b2;
-   
-    
-}
-.hello:hover{
-  filter: brightness(40%)
-}
 
 
+  }
+
+  .hello:hover {
+    filter: brightness(40%)
+  }
 </style>
+
 <body>
   <div class="flex2">
-  <div class="flex">
-    <div class="hello">Hello,Penguin!</div>
-    <div><img src="img.html/48-пингвин-картинка.jpg" alt=""></div>
-    <div class="hello">Hello,Penguin!</div>
+    <div class="flex">
+      <div class="hello">Hello,Penguin!</div>
+      <div><img src="img.html/48-пингвин-картинка.jpg" alt=""></div>
+      <div class="hello">Hello,Penguin!</div>
+    </div>
+    <div class="flex1">
+      <div><img src="img.html/48-пингвин-картинка.jpg" alt=""></div>
+      <div class="hello">Hello,Penguin!</div>
+      <div><img src="img.html/48-пингвин-картинка.jpg" alt=""></div>
+    </div>
   </div>
-  <div class="flex1">
-  <div><img src="img.html/48-пингвин-картинка.jpg" alt=""></div>
-  <div class="hello">Hello,Penguin!</div>
-  <div><img src="img.html/48-пингвин-картинка.jpg" alt=""></div>
-</div>
-</div>
 </body>
+
 </html>
