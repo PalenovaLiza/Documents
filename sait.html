@@ -7,7 +7,7 @@
   <title>My sait</title>
 </head>
 <style>
-  li {
+  .li {
     display: inline;
     padding: 5px;
 
@@ -31,21 +31,69 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 300px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 500px;
+    margin-top: 10px;
+    width: 1000px;
+    position: absolute;
+
   }
 
   body {
     background-color: #060606;
   }
 
-  ul {
+  .ul {
     text-align: center;
   }
 
   img {
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .imgflex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 85%;
+    margin-top: 250px;
+    align-items: center
+  }
+
+  .box {
+    width: 800px;
+    height: 630px;
+    background-color: rgba(0, 0, 0, 0.284);
+    margin-left: 300px;
+    position: relative;
+    margin-top: -400px;
+
+  }
+
+  .kofe {
+    width: 400px;
+    height: 400px;
+    margin-left: 400px;
+    margin-top: -34px;
+
+  }
+  span{
+    color: rgb(255 204 115);
+  }
+  h1{
+    font-size: 40px;
+   
+  }
+  h2{
+    color: white;
+  }
+  li{
+    color:white ;
+    font-size: 20px;
+  }
+  p{
+    color:white ;
+    font-size: 25px;
   }
 </style>
 
@@ -53,10 +101,10 @@
   <div>
     <div>
       <nav>
-        <ul>
-          <li><a href="#" class="a">About me</a></li>
-          <li><a href="#" class="a">Homework</a></li>
-          <li><a href="#" class="a">Classwork</a></li>
+        <ul class="ul">
+          <li class="li"><a href="#" class="a">About me</a></li>
+          <li class="li"> <a href="#" class="a">Homework</a></li>
+          <li class="li"> <a href="#" class="a">Classwork</a></li>
         </ul>
       </nav>
     </div>
@@ -64,15 +112,29 @@
       <div class="ball"></div>
       <div></div>
       <div></div>
-      <div></div>
       <div class="ball"></div>
-      <div></div>
       <div class="ball"></div>
+
+
     </div>
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
+    <div class="imgflex">
+      <img src="img.html/pngwing.com.png" alt="" class="img">
+      <img src="img.html/pngwing.com (1).png" alt="" class="img">
+      <img src="img.html/pngwing.com (2).png" alt="" class="img">
+    </div>
+    <div class="box">
+      <h1 style="color: white;">Привет!</h1>
+      <h2>Я - <span>Лиза!</span> И совсем скоро я буду делать <span>крутые сайты.</span></h2>
+      <p>И вот, что я уже <span>cделала</span> для этого:</p>
+      <ul>
+        <li> <span>3 месяца </span>обучения в академии "ТОР"</li>
+        <li>Более <span>20 выполненныx</span> практический заданий</li>
+        <li> Около <span>20 часов</span> видео </li>
+      </ul>
+      <img src="img.html/kofe.jpg" alt="" class="kofe">
+    </div>
   </div>
+
 </body>
 
 </html>
