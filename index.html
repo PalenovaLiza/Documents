@@ -4,107 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>my site</title>
 </head>
 <style>
-    body {
-        background-image: url(img.html/1614400677_2-p-dengi-na-temnom-fone-2.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      
+    .li {
+        display: inline;
+        padding: 5px;
+
     }
 
-    .flex {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-        align-items: center
-        
-    }
-
-    a {
+    .a {
         text-decoration: none;
-        color: black;
-        display: inline-block;
+        color: rgb(255 204 115);
+        font-weight: bolder;
+        text-transform: uppercase;
+
 
     }
 
-    a:hover {
-        transform: scale(1.2, 1.2);
-        transition: 1s;
-        color: #898d84;
+    .ball {
+        background-color: rgb(255 204 115);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 500px;
+        margin-top: 10px;
+        width: 1000px;
+        position: absolute;
 
     }
 
-    li {
+    body {
+        background-color: #060606;
+    }
 
-        list-style-type: none;
-        color: black;
-        font-size: large;
-        font-weight: bold;
-        background-color: aliceblue;
-        border-radius: 3px;
-        padding: 10px;
-        margin: 5px;
-        width: 240px;
+    .ul {
         text-align: center;
-        border: 3px dashed #5e735d;
-
     }
 
-    blockquote {
-        margin: 20px auto;
-        width: 400px;
-        text-align: center;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imgflex {
+        display: flex;
+        flex-direction: column;
+        margin-left: 85%;
+        margin-top: 250px;
+        align-items: center
+    }
+
+    .box {
+        width: 800px;
+        height: 630px;
+        background-color: rgba(0, 0, 0, 0.284);
+        margin-left: 300px;
         position: relative;
-        color: aliceblue;
-        font-size: 40px;
-        border: 3px solid white;
-        padding: 10px;
-        background-color: #807f7b;
+        margin-top: -460px;
+
     }
 
-    blockquote::selection {
-        background: #fef9d8;
-        color: black;
+    .kofe {
+        width: 400px;
+        height: 400px;
+        margin-left: 400px;
+        margin-top: -100px;
+
+    }
+
+    span {
+        color: rgb(255 204 115);
+    }
+
+    h1 {
+        font-size: 50px;
+
+    }
+
+    h2 {
+        color: white;
+        font-size: 30px;
+    }
+
+    .li2 {
+        color: white;
+        font-size: 28px;
+    }
+
+    p {
+        color: white;
+        font-size: 25px;
     }
 </style>
 
 <body>
+    <div>
+        <div>
+            <nav>
+                <ul class="ul">
+                    <li class="li"><a href="index.html" class="a">главная</a></li>
+                    <li class="li"> <a href="homework.html" class="a">домашние работы</a></li>
+                    <li class="li"> <a href="classwork.html" class="a">практика</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="grid">
+            <div class="ball"></div>
+            <div></div>
+            <div></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
 
-    </h2>
-    <div class="flex">
 
-        <ul>
-            <li><a href="DZ1.html"> Домашняя работа 1</a></li>
-            <li> <a href="DZ2.html"> Домашняя работа 2</a></li>
-            <li><a href="DZ3.html"> Домашняя работа 3 </a></li>
-            <li><a href="DZ4.html"> Домашняя работа 4 </a></li>
-            <li><a href="DZ5.html"> Домашняя работа 5 </a></li>
-            <li><a href="DZ6.html"> Домашняя работа 6</a></li>
-            <li><a href="DZ7.html"> Домашняя работа 7</a></li>
-            <li><a href="DZ9.html"> Домашняя работа 9</a></li>
-            <li><a href="DZ11.html"> Домашняя работа 11</a></li>
-            <li><a href="DZ12.html"> Домашняя работа 12</a></li>
-        </ul>
-        <blockquote>Если хочешь чего-то добиться, просто делай!</blockquote>
-        <ul>
-            <li> <a href="PZ1.html"> Практическая работа 1</a></li>
-            <li> <a href="PZ2.html">Практическая работа 2</a></li>
-            <li><a href="PZ3.html">Практическая работа 3</a></li>
-            <li> <a href="PZ4.html">Практическая работа 4</a></li>
-            <li> <a href="PZ5.html">Практическая работа 5</a></li>
-            <li> <a href="PZ6.html">Практическая работа 6</a></li>
-            <li> <a href="PZ7.html">Практическая работа 7</a></li>
-            <li> <a href="PZ8.html">Практическая работа 8</a></li>
-            <li> <a href="PZ9.html">Практическая работа 9</a></li>
-            <li> <a href="PZ10.html">Практическая работа 10</a></li>
-            <li> <a href="PZ11.html">Практическая работа 11</a></li>
-            <li> <a href="PZ12.html">Практическая работа 12</a></li>
-            <li> <a href="PZ13.html">Практическая работа 13</a></li>
-            <li> <a href="PZ14.html">Практическая работа 14</a></li>
-        </ul>
+        </div>
+        <div class="imgflex">
+            <a href="https://vk.com/neweliza"><img src="img.html/pngwing.com.png" alt="" class="img"></a>
+            <a href="https://t.me/lizaveta_palenova"><img src="img.html/pngwing.com (1).png" alt="" class="img"></a>
+            <a href="https://youtube.com/@lizaveta_palenova"><img src="img.html/pngwing.com (2).png" alt=""
+                    class="img"></a>
+        </div>
+        <div class="box">
+            <h1 style="color: white;">Привет!</h1>
+            <h2>Я - <span>Лиза!</span> И совсем скоро я буду делать крутые сайты.</h2>
+            <p>И вот почему:</p>
+            <ul>
+                <li class="li2"> <span>3 месяца </span>обучения в академии "ТОР"</li>
+                <li class="li2">Более <span>20 выполненныx</span> практический заданий</li>
+                <li class="li2"> Около <span>60 часов</span> видео </li>
+            </ul>
+            <img src="img.html/kofe1.png" alt="" class="kofe">
+        </div>
     </div>
+
 </body>
 
 </html>
