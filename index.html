@@ -5,103 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documents</title>
+    <style>
+        .li {
+            display: inline;
+            padding: 5px;
+
+        }
+
+        .a {
+            text-decoration: none;
+            color: rgb(255 204 115);
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-size: 18px;
+
+
+        }
+
+        .ball {
+            background-color: rgb(255 204 115);
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 500px;
+            margin-top: 10px;
+            width: 1000px;
+            position: absolute;
+
+        }
+
+        body {
+            background-color: #060606;
+        }
+
+        .ul {
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .imgflex {
+            display: flex;
+            flex-direction: column;
+            margin-left: 85%;
+            margin-top: 250px;
+            align-items: center
+        }
+
+        .box {
+            width: 800px;
+            height: 630px;
+            background-color: rgba(0, 0, 0, 0.284);
+            margin-left: 300px;
+            position: relative;
+            margin-top: -460px;
+
+
+        }
+
+        .kofe {
+            width: 400px;
+            height: 400px;
+            margin-left: 400px;
+            margin-top: -135px;
+            position: absolute;
+
+        }
+
+        span {
+            color: rgb(255 204 115);
+        }
+
+        h1 {
+            font-size: 50px;
+
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+        }
+
+        .li2 {
+            color: white;
+            font-size: 28px;
+        }
+
+        p {
+            color: white;
+            font-size: 25px;
+        }
+
+        .dop {
+            font-size: 20px;
+        }
+    </style>
+
 </head>
-<style>
-    .li {
-        display: inline;
-        padding: 5px;
-
-    }
-
-    .a {
-        text-decoration: none;
-        color: rgb(255 204 115);
-        font-weight: bolder;
-        text-transform: uppercase;
-
-
-    }
-
-    .ball {
-        background-color: rgb(255 204 115);
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 500px;
-        margin-top: 10px;
-        width: 1000px;
-        position: absolute;
-
-    }
-
-    body {
-        background-color: #060606;
-    }
-
-    .ul {
-        text-align: center;
-    }
-
-    img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .imgflex {
-        display: flex;
-        flex-direction: column;
-        margin-left: 85%;
-        margin-top: 250px;
-        align-items: center
-    }
-
-    .box {
-        width: 800px;
-        height: 630px;
-        background-color: rgba(0, 0, 0, 0.284);
-        margin-left: 300px;
-        position: relative;
-        margin-top: -460px;
-
-    }
-
-    .kofe {
-        width: 400px;
-        height: 400px;
-        margin-left: 400px;
-        margin-top: -100px;
-
-    }
-
-    span {
-        color: rgb(255 204 115);
-    }
-
-    h1 {
-        font-size: 50px;
-
-    }
-
-    h2 {
-        color: white;
-        font-size: 30px;
-    }
-
-    .li2 {
-        color: white;
-        font-size: 28px;
-    }
-
-    p {
-        color: white;
-        font-size: 25px;
-    }
-</style>
 
 <body>
     <div>
@@ -120,7 +128,7 @@
             <div></div>
             <div class="ball"></div>
             <div class="ball"></div>
-
+            
 
         </div>
         <div class="imgflex">
@@ -135,9 +143,11 @@
             <p>И вот почему:</p>
             <ul>
                 <li class="li2"> <span>3 месяца </span>обучения в академии "ТОР"</li>
-                <li class="li2">Более <span>20 выполненныx</span> практический заданий</li>
-                <li class="li2"> Около <span>60 часов</span> видео </li>
+                <li class="li2"><span>20 + выполненныx</span> практический заданий</li>
+                <li class="li2"><span>60 +  часов </span> просмотренных видео </li>
             </ul>
+            <p class="dop">Я пока допью свой кофе, а ты можешь посмотреть мои работы! </p>
+
             <img src="img.html/kofe1.png" alt="" class="kofe">
         </div>
     </div>
