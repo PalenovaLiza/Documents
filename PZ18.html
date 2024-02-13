@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+    background-color: rgba(173, 202, 171, 0.849);
+    font-family: sans-serif;
+}
+.myhtmltabs
+{
+    display: flex;
+   flex-direction: column;
+   max-width: 1000px;
+    padding: 25px;
+}
+.myhtmltabs input[type="radio"]
+{
+    display: none;
+}
+.myhtmltabs label{
+    padding: 25px;
+    font-weight: bold;
+    background-color: rgb(220, 207, 233);
+    cursor: pointer;
+}
+.myhtmltabs .tab h1{
+   font-size: 2em;
+}
+.myhtmltabs .tab{
+    width: 100%;
+    height: 200px;
+    
+    background-color: rgb(228, 216, 171);
+   display: none;
+}
+.myhtmltabs input[type='radio']:checked+label +.tab {
+    display: block;
+}
+.myhtmltabs input[type='radio']:checked + label {
+    background: rgb(67, 144, 216);
+    color: white;
+}
+img {
+      width: 350px;
+      height: 220px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="myhtmltabs">
+    <input type="radio" id="hometab" name="myhtmltabs" checked>
+    <label for="hometab">ПРОБНАЯ</label>
+
+    <div class="tab">
+      <h1>Я просто</h1 >
+
+        <p>взяла код из интернета</p>
+
+    </div>
+
+    <input type="radio" id="silvertab" name="myhtmltabs">
+    <label for="silvertab">ВЕРСИЯ</label>
+    <div class="tab">
+
+        <h1> Потому что ничего не поняла</h1 >
+
+        <p>но это мне тоже не особо помогло</p>
+
+    </div>
+
+    <input type="radio" id="goldtab" name="myhtmltabs">
+
+    <label for="goldtab">ВКЛАДОК</label>
+
+    <div class="tab">
+        <h1>Я просто оставлю </h1>
+        <p>это здесь на всякий случай...</p>
+    </div>
+
+</div>
+</body>
+</html>
